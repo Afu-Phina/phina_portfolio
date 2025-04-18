@@ -751,8 +751,9 @@
     padding: 30px 10px;
     gap: 25px;
   }
-   /* mobile menu dropdown styling */
-   .desktop_menu.active {
+
+  /* mobile menu dropdown styling */
+  .desktop_menu.active {
     display: block;
     position: absolute;
     z-index: 1000;
