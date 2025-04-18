@@ -751,6 +751,23 @@
     padding: 30px 10px;
     gap: 25px;
   }
+   /* mobile menu dropdown styling */
+   .desktop_menu.active {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .desktop_menu.active ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /* desktop */
