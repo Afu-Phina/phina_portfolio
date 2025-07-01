@@ -101,6 +101,7 @@ function openModal(projects) {
   ModalImage.src = projects.image;
   ModalImage.alt = projects.title;
   ModalContent.appendChild(ModalImage);
+  ModalImage.classList.add('modal_image');
 
   const ModalTitle = document.createElement('h3');
   ModalTitle.innerHTML = projects.title;

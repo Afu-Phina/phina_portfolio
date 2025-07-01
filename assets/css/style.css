@@ -1276,12 +1276,16 @@
 
   .modalcontent {
     background-color: #fff;
-    padding: 30px;
-    max-width: 90%;
+    padding: 20px;
+    max-width: 100%;
     border-radius: 10px;
     position: relative;
     text-align: left;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal_image{
+    width: 800px;
   }
 
   .closebutton {
@@ -1298,9 +1302,8 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 0;
-    justify-content: center;
+    gap: 30px;
+    padding: 8px;
   }
 
   .modal_link {
@@ -1314,6 +1317,7 @@
     text-decoration: none;
     border-radius: 4px;
     margin-right: 10px;
+    font-size: 20px;
   }
 
   #modaltechnologies li {
