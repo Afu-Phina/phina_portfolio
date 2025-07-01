@@ -1,10 +1,10 @@
-            //Mobile Menu Toggle
-const mobileMenu = document.getElementById('mobile_menu');//Get the hamburger icon div
-//Add a click event to toggle the menu for mobile 
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobile_menu');// Get the hamburger icon div
+// Add a click event to toggle the menu for mobile
 mobileMenu.addEventListener('click', () => {
-  const desktopMenu = document.getElementById('desktop_menu');//Get the full menu
+  const desktopMenu = document.getElementById('desktop_menu');// Get the full menu
   mobileMenu.classList.toggle('active');
-  desktopMenu.classList.toggle('active');//Toggle a css class to show/hide the menu
+  desktopMenu.classList.toggle('active');// Toggle a css class to show/hide the menu
 });
 
 // object to store card properties
@@ -54,7 +54,7 @@ const projects = [
     image: './assets/images/Project 5.svg',
     description: 'An interactive gallery that showcase my project',
     title: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails',' JavaScript', 'HTML/CSS'],
+    technologies: ['Ruby on Rails', ' JavaScript', 'HTML/CSS'],
     link: '#',
     githublink: 'https://github.com/Afu-Phina',
     liveserverlink: '#',
@@ -76,7 +76,7 @@ function closeModal() {
   const modal = document.getElementById('projectModal');
   if (modal) {
     modal.remove();
-     window.removeEventListener('click', outsideClick);
+    // window.removeEventListener('click', outsideClick);
   }
 }
 
