@@ -117,15 +117,21 @@
     flex-direction: column;
   }
 
-  .project_header h2 {
+.project_heading{
+  text-align: center;
+}
+
+  .project_heading h2 {
     font-size: 48px;
     margin: 20px 10px;
+    
   }
 
-  .project_cards {
+  .projects_cards {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     margin-bottom: 10px;
     background-color: #1a2236;
@@ -155,6 +161,7 @@
     background-color: #98dede;
     padding: 4px 8px;
     font-size: 13px;
+    list-style: none;
   }
 
   .footer_link a {
@@ -194,12 +201,12 @@
     margin-top: 35px;
     margin-left: 15px;
     color: #1a2236;
+    text-align: center;
   }
 
   .about_text button {
     padding: 10px 20px;
-    margin-left: 15px;
-    margin-top: 25px;
+    margin: 25px 20px;
     font-size: 18px;
     font-weight: bold;
     width: 350px;
@@ -207,6 +214,7 @@
     background-color: #1a2236;
     border: 1px solid;
     color: #fff;
+    
   }
 
   .about_cards {
@@ -387,6 +395,71 @@
     color: #000;
     font-size: 20px;
   }
+
+  /*  MODAL STYLES  */
+.modal_style {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modal_style.active {
+  display: flex;
+}
+
+.modalcontent {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 90%;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.closebutton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+#modaltechnologies {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.modal_link {
+  margin-top: 20px;
+}
+
+.modal_link a.abt_btn {
+  padding: 8px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#modaltechnologies li{
+  background-color: #d0d9d4;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
 }
 
 /* tablet */
@@ -510,7 +583,7 @@
     margin: 20px 10px;
   }
 
-  .project_cards {
+  .projects_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -769,6 +842,71 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  /*  MODAL STYLES  */
+.modal_style {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modal_style.active {
+  display: flex;
+}
+
+.modalcontent {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 90%;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.closebutton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+#modaltechnologies {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.modal_link {
+  margin-top: 20px;
+}
+
+.modal_link a.abt_btn {
+  padding: 8px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#modaltechnologies li{
+  background-color: #d0d9d4;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
 }
 
 /* desktop */
@@ -873,7 +1011,7 @@
     margin: 20px 10px;
   }
 
-  .project_cards {
+  .projects_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -1119,4 +1257,70 @@
     padding: 30px 10px;
     gap: 600px;
   }
+
+  /*  MODAL STYLES  */
+.modal_style {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modal_style.active {
+  display: flex;
+}
+
+.modalcontent {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 90%;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.closebutton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+#modaltechnologies {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+
+}
+
+.modal_link {
+  margin-top: 20px;
+}
+
+.modal_link a.abt_btn {
+  padding: 8px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+#modaltechnologies li{
+  background-color: #d0d9d4;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
 }
