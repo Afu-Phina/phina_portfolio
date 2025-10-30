@@ -34,13 +34,20 @@
 <h1>Afumbom Phina</h1>
 <p class="first">Hello! I am a software developer! I can help you build a product, feature or website. Take a look at my work. </p>
 <p class="second">If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
-<button>Start Collaboration</button>
+<button type="button">
+    <a href="#contact">Start Collaboration</a>
+</button>
         </section>
 
 
                     <section class="projects" id="portfolio">
-                        <div class="project_heading"><h2>Projects</h2></div>
-                        <div class="project_cards">
+
+                        <div class="project_heading">
+                            <h2>Projects</h2>
+                        </div>
+
+                        <div class="projects_cards" id="projects_cards">
+<!-- 
                         <div class="project_card">
                         <img src="./assets/images/Project 1.svg" alt="">
                         <h3>Project name goes here</h3>
@@ -53,6 +60,7 @@
                            See this project ➡
                         </button>
                         </div>
+                        
                         <div class="project_card">
                             <img src="./assets/images/Project 2.svg" alt="">
                             <h3>Project name goes here</h3>
@@ -116,7 +124,9 @@
                                             <button>
                                                See this project ➡
                                             </button>
-                                            </div>
+                                            </div> -->
+
+
                                         </div>
                                             </section>
 
@@ -173,20 +183,20 @@
      <p>I'm always intrested in hearing about new projects, so if you'd like to chat please get in touch.</p>
      </div>
      <div class="form">
-     <form action="#">
+     <form action="https://formspree.io/f/manorpda" method="post" id="contact">
         <div class="your_name">
         <label for="#">Your name</label>
-        <input type="text" placeholder="Phina" required maxlength="300">
+        <input type="text" placeholder="Your_Name" required maxlength="300" name="yname">
         </div>
         <div>
             <div class="your_email">
                 <label for="#">Your email</label>
-                <input type="email" required maxlength="300">
+                <input type="email" required maxlength="300" name="email">
                 </div>
         </div>
         <div class="your_message">
             <label for="#">Your message</label>
-            <textarea name="#" placeholder="Enter your message here... " required maxlength="500"></textarea>
+            <textarea name="message" placeholder="Enter your message here... " required maxlength="500"></textarea>
             </div>
     <button type="submit" class="submit">    
     Start collaboration
@@ -203,12 +213,11 @@
    </div>
    <div class="footer_list">
     <ul>
-        <li><a href=""><img src="./assets/images/ic_stackoverflow.svg" alt=""></a></li>
-        <li><a href=""><img src="./assets/images/ic_github.svg" alt=""></a></li>
-        <li><a href=""><img src="./assets/images/ic_twitter.svg" alt=""></a></li>
-        <li><a href=""><img src="./assets/images/ic_linkedin.svg" alt=""></a></li>
-        <li><a href=""><img src="./assets/images/ic_medium.svg" alt=""></a></li>
-        <li><a href=""><img src="./assets/images/ic_angellist.svg" alt=""></a></li>
+        <li><a href="https://github.com/Afu-Phina"><img src="./assets/images/ic_github.svg" alt=""></a></li>
+        <li><a href="https://x.com/AbangPhina"><img src="./assets/images/ic_twitter.svg" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/in/abang-phina-4099a6346/"><img src="./assets/images/ic_linkedin.svg" alt=""></a></li>
+        <li><a href="https://medium.com/@abangphina11"><img src="./assets/images/ic_medium.svg" alt=""></a></li>
+        
     </ul>
    </div>
  
